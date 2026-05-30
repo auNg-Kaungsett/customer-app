@@ -5,24 +5,15 @@
 
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#5b86ff">
-
   <link rel="icon" href="icon.png">
 </head>
 
 <body>
 
-<h2>AnyGo Customer App</h2>
-
 <script>
-  // ✅ Register Service Worker (THIS IS REQUIRED)
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log('SW registered'))
-      .catch(err => console.log('SW error', err));
-  }
-
-  // ❌ REMOVE redirect for PWA mode
-  // window.location.href = "...";
+  // Redirect immediately to Salesforce site
+  window.location.href =
+    "https://orgfarm-17922efa06-dev-ed.develop.my.site.com/login";
 </script>
 
 </body>
